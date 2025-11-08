@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Английский для детей 6–12 — репетитор</title>
+  <style>
+    :root{
+      --bg1:#0a0f1f;
+      --bg2:#1b1f3a;
+      --brand:#ff5ea8;
+      --brand-2:#a78bfa;
+      --brand-3:#22c55e;
+      --ink:#e5e7eb;
+      --muted:#94a3b8;
+      --card:#0f162e;
+      --shadow:0 10px 20px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    body{margin:0;font-family:system-ui;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--ink)}
+    a{color:var(--brand-2)}
+    header,section,footer{padding:24px;max-width:1080px;margin:auto}
+    .hero-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .hero-emoji{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--card);box-shadow:var(--shadow)}
+    .btn{padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-block}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),#ff9f1a);color:#fff}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media(max-width:800px){.grid-2,.grid-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Английский для детей 6–12 — играем, говорим, растём!</h1>
+    <p>Доброжелательные онлайн‑уроки через игры, песни и мини‑проекты. Индивидуально и в мини‑группах.</p>
+    <a class="btn btn-primary" href="#contacts">Записаться на пробное занятие</a>
+  </header>
+
+  <section>
+    <div class="hero-list">
+      <span><span class="hero-emoji">🎲</span>Игровые задания</span>
+      <span><span class="hero-emoji">🗣️</span>Разговорная практика</span>
+      <span><span class="hero-emoji">💬</span>Чат поддержки с учеником</span>
+      <span><span class="hero-emoji">💡</span>Обратная связь с родителями</span>
+      <span><span class="hero-emoji">📘</span>Помощь со школьной программой</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Здравствуйте! Я — ваш репетитор английского 💛</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Коротко обо мне</h3>
+        <p>Опыт работы с детьми 20+ лет, фокус на раннем говорении и естественном восприятии речи. Создаю яркие карточки, игры и задания, чтобы детям было интересно, а результат — заметен быстро.</p>
+      </div>
+      <div class="card">
+        <h3>Что ждёт ребёнка</h3>
+        <p>Много общения, движение, игры, комиксы, песни — и всё на английском. Ошибок не боимся, учимся через практику.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Форматы занятий</h2>
+    <div class="grid-2">
+      <div class="card"><h3>👤 Индивидуально · 30 или 45 мин</h3><p>Персональный план под интересы ребёнка. Темп комфортный, результат стабильный.</p></div>
+      <div class="card"><h3>👫 Мини‑группа 2–4 · 45 мин</h3><p>Игры, мини‑проекты и диалоги. Учимся слушать и отвечать друг другу, как в жизни.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как проходят уроки</h2>
+    <div class="grid-3">
+      <div class="card"><h3>👂 Слушаем</h3><p>Звуки, слова и короткие диалоги — развиваем восприятие речи.</p></div>
+      <div class="card"><h3>🎲 Играем</h3><p>Мемори, квесты и карточки помогают запомнить слова легко и весело.</p></div>
+      <div class="card"><h3>🗣️ Говорим</h3><p>Мини‑диалоги, фразы из жизни, тренируем уверенность в речи.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Цены и длительность</h2>
+    <div class="grid-3">
+      <div class="card"><h3>Индивидуально · 30 мин</h3><p>Цена по запросу, зависит от расписания и формата.</p></div>
+      <div class="card"><h3>Индивидуально · 45 мин</h3><p>Цена по запросу, зависит от расписания и формата.</p></div>
+      <div class="card"><h3>Мини‑группа · 45 мин</h3><p>Цена по запросу, зависит от расписания и формата.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> Репетитор английского для детей 6–12</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
